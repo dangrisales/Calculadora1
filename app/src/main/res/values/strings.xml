@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Calculadora1</string>
+    <string name="cuadrado">Cuadrado</string>
+    <string name="circulo">Circulo</string>
+    <string name="Triangulo">Triangulo</string>
+    <string name="cubo">Cubo</string>
+    <string name="calcular">CALCULAR</string>
+    <string name="lado">Lado</string>
+    <string name="base">Base</string>
+    <string name="perimetro">Perimetro</string>
+    <string name="area">Area</string>
+    <string name="volumen">Volumen</string>
+</resources>
