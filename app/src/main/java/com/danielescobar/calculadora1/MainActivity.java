@@ -1,5 +1,6 @@
 package com.danielescobar.calculadora1;
 
+import android.content.pm.ActivityInfo;
 import android.graphics.drawable.Drawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -27,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         elado = findViewById(R.id.elado);
@@ -106,7 +108,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else {
 
-                    lado = Integer.parseInt(elado.getText().toString());
+                    lado = Float.parseFloat(elado.getText().toString());
                     calculo = 4 * lado;
                     tPerimetro.setVisibility(View.VISIBLE);
                     ePerimetro.setVisibility(View.VISIBLE);
@@ -132,7 +134,7 @@ public class MainActivity extends AppCompatActivity {
 
                 }
                 else {
-                    lado = Integer.parseInt(elado.getText().toString());
+                    lado = Float.parseFloat(elado.getText().toString());
                     calculo = (float) (2 * Math.PI * lado);
                     tPerimetro.setVisibility(view.VISIBLE);
                     ePerimetro.setVisibility(view.VISIBLE);
@@ -157,7 +159,7 @@ public class MainActivity extends AppCompatActivity {
 
                 }
                 else {
-                    lado = Integer.parseInt(elado.getText().toString());
+                    lado = Float.parseFloat(elado.getText().toString());
                     calculo = (float) (6 * Math.pow(lado, 2));
                     tArea.setVisibility(view.VISIBLE);
                     eArea.setVisibility(view.VISIBLE);
@@ -184,8 +186,8 @@ public class MainActivity extends AppCompatActivity {
                     }
                 else {
 
-                    lado = Integer.parseInt(elado.getText().toString());
-                    base = Integer.parseInt(eBase.getText().toString());
+                    lado = Float.parseFloat(elado.getText().toString());
+                    base = Float.parseFloat(eBase.getText().toString());
                     Altura = Integer.parseInt(eAltura.getText().toString());
                     calculo = lado + base + Altura;
                     tPerimetro.setVisibility(view.VISIBLE);
